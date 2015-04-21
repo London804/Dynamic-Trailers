@@ -62,6 +62,14 @@ body {
 
     }
 
+    #vid-player-content {
+        margin-top: 20px;
+//        background: transparent url('../img/curtains.jpg') 0 0 no-repeat;
+//        display: block;
+//        width: 100%;
+//        height: 100%;
+    }
+
     .slick-prev {
         background: transparent url('../img/scroll-arrow-left.png') no-repeat 0 0;
         position: absolute;
@@ -111,6 +119,12 @@ body {
             font-size: 16px;
         }
     }
+    .slick-prev {
+     left: -2%;
+    }
+    .slick-next {
+        right: -2%;
+    }
 
 
 }
@@ -118,78 +132,15 @@ body {
 
 
 @media (min-width: $screen-sm-min) {
-    section#bwsCampaignContainer  {
 
-        .slick-next{
-            top: 60%;
-            right: -11%;
-            transform: translate(-100%, -100%);
-            -ms-transform: translate(-100%, -100%);;
-            -webkit-transform: translate(-100%, -100%);
-        }
-
-        .slick-prev {
-            top: 60%;
-            left: 0;
-            transform: translate(-100%, -100%);
-            -ms-transform: translate(-100%, -100%);;
-            -webkit-transform: translate(-100%, -100%);
-        }
-        #vid-player-container {
-            position: relative;
-            top: -100px;
-            z-index: 0;
-            margin-bottom: -60px;
-        }
-
-    }
 }
 
-//@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
-//    body#bwsCampaignContainer  {
-//
-//
-//
-//    }
-//}
-
-
 @media (min-width: $screen-md-min) {
-    section#bwsCampaignContainer  {
 
-        .slick-next {
-            right: -9%;
-        }
-        .slick-prev {
-
-        }
-//
-    }
 
 }
 
 @media (min-width: $screen-lg-min) {
-    section#bwsCampaignContainer  {
-        .container {
-            width: 1100px !important;
-        }
 
-        .mycarousel {
-            margin-left: 30px;
-        }
-
-        .sign {
-            left: 100px;
-        }
-        .slick-next { //it seems like the 992px breakpoint works on UAT
-            right: -8%;
-        }
-        #vid-player-content {
-            padding: 0 4%;
-            top: 55px;
-        }
-
-
-    }
 }
 

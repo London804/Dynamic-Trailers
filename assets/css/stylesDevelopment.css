@@ -6843,6 +6843,9 @@ body .mycarousel div.overlay .play-icon {
   -ms-transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
 }
+body #vid-player-content {
+  margin-top: 20px;
+}
 body .slick-prev {
   background: transparent url("../img/scroll-arrow-left.png") no-repeat 0 0;
   position: absolute;
@@ -6883,51 +6886,11 @@ body .text-content h4 {
 body .text-content p {
   font-size: 16px;
 }
-
-@media (min-width: 768px) {
-  section#bwsCampaignContainer .slick-next {
-    top: 60%;
-    right: -11%;
-    transform: translate(-100%, -100%);
-    -ms-transform: translate(-100%, -100%);
-    -webkit-transform: translate(-100%, -100%);
-  }
-  section#bwsCampaignContainer .slick-prev {
-    top: 60%;
-    left: 0;
-    transform: translate(-100%, -100%);
-    -ms-transform: translate(-100%, -100%);
-    -webkit-transform: translate(-100%, -100%);
-  }
-  section#bwsCampaignContainer #vid-player-container {
-    position: relative;
-    top: -100px;
-    z-index: 0;
-    margin-bottom: -60px;
-  }
+body .slick-prev {
+  left: -2%;
 }
-@media (min-width: 992px) {
-  section#bwsCampaignContainer .slick-next {
-    right: -9%;
-  }
-}
-@media (min-width: 1200px) {
-  section#bwsCampaignContainer .container {
-    width: 1100px !important;
-  }
-  section#bwsCampaignContainer .mycarousel {
-    margin-left: 30px;
-  }
-  section#bwsCampaignContainer .sign {
-    left: 100px;
-  }
-  section#bwsCampaignContainer .slick-next {
-    right: -8%;
-  }
-  section#bwsCampaignContainer #vid-player-content {
-    padding: 0 4%;
-    top: 55px;
-  }
+body .slick-next {
+  right: -2%;
 }
 
 /*# sourceMappingURL=stylesDevelopment.css.map */
