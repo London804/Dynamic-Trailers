@@ -1,0 +1,194 @@
+@import 'bootstrap.scss';
+
+.col-centered{
+  float: none;
+  margin: 0 auto;
+}
+//variables
+$background: #fafafa;
+$font: Impact, Charcoal, sans-serif;
+
+body {
+    background: $background;
+    font-family: $font;
+
+    .mycarousel {
+        margin-top: 0;
+        margin-bottom: 30px;
+        div.slick-slide.slick-active {
+//            width: auto !important;
+        }
+        //        margin-left: 30px;
+        .thumb-desc {
+            margin-top: 10px;
+            font-size: 16px;
+            img {
+                display: inline-block;
+                margin-left: 10px;
+            }
+            a {
+                color: black !important;
+                font-weight: bold;
+            }
+        }
+        div.overlay {
+            background: rgba(0, 0, 0, 0.75);
+            width: 70px;
+            height: 50px;
+            position: absolute;
+            left: 50%;
+            top: 46%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -webkit-transform: translate(-50%, -50%);
+            border-radius: 10px;
+            .play-icon {
+                width: 0;
+                height: 0;
+                border-top: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 20px solid white;
+                position: absolute;
+                left: 54%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                -webkit-transform: translate(-50%, -50%);
+
+            }
+
+        }
+
+    }
+
+    .slick-prev {
+        background: transparent url('../img/scroll-arrow-left.png') no-repeat 0 0;
+        position: absolute;
+        width: 40px;
+        height: 49px;
+        text-indent: -9999px;
+        border: none;
+        top: 30%;
+        //        transform: translate(-100%, -100%);
+        //        -ms-transform:  translate(-100%, -100%);
+        //        -webkit-transform: translate(-100%, -100%);
+        left: 0;
+
+    }
+    .slick-next {
+        background: transparent url('../img/scroll-arrow-right.png') no-repeat 0 0;
+        position: absolute;
+        width: 40px;
+        height: 49px;
+        text-indent: -9999px;
+        border: none;
+        top: 30%;
+        //        transform: translate(-100%, -100%);
+        //        -ms-transform: translate(-100%, -100%);;
+        //        -webkit-transform: translate(-100%, -100%);
+        right: 0;
+    }
+    .slick-slide {
+        margin: 0 5px;
+        a {
+            width: 300px;
+            margin: 0 auto;
+            display: block;
+            position: relative;
+            left: 3px;
+            color: black !important;
+        }
+
+    }
+
+    .text-content {
+        margin: 20px auto;
+        h4 {
+            font-size: 22px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+
+
+}
+
+
+
+@media (min-width: $screen-sm-min) {
+    section#bwsCampaignContainer  {
+
+        .slick-next{
+            top: 60%;
+            right: -11%;
+            transform: translate(-100%, -100%);
+            -ms-transform: translate(-100%, -100%);;
+            -webkit-transform: translate(-100%, -100%);
+        }
+
+        .slick-prev {
+            top: 60%;
+            left: 0;
+            transform: translate(-100%, -100%);
+            -ms-transform: translate(-100%, -100%);;
+            -webkit-transform: translate(-100%, -100%);
+        }
+        #vid-player-container {
+            position: relative;
+            top: -100px;
+            z-index: 0;
+            margin-bottom: -60px;
+        }
+
+    }
+}
+
+//@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max){
+//    body#bwsCampaignContainer  {
+//
+//
+//
+//    }
+//}
+
+
+@media (min-width: $screen-md-min) {
+    section#bwsCampaignContainer  {
+
+        .slick-next {
+            right: -9%;
+        }
+        .slick-prev {
+
+        }
+//
+    }
+
+}
+
+@media (min-width: $screen-lg-min) {
+    section#bwsCampaignContainer  {
+        .container {
+            width: 1100px !important;
+        }
+
+        .mycarousel {
+            margin-left: 30px;
+        }
+
+        .sign {
+            left: 100px;
+        }
+        .slick-next { //it seems like the 992px breakpoint works on UAT
+            right: -8%;
+        }
+        #vid-player-content {
+            padding: 0 4%;
+            top: 55px;
+        }
+
+
+    }
+}
+
