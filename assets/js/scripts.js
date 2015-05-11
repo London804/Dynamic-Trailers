@@ -39,7 +39,7 @@ $(function(){
 
     function playYoutube(youtube_id) {
         $("#video iframe").attr("src", "");
-        $("#video iframe").attr("src", "//www.youtube.com/embed/" + youtube_id + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fcontent.popsicle.com");
+        $("#video iframe").attr("src", "https://www.youtube.com/embed/" + youtube_id + "?rel=0&amp;showinfo=0&amp;modestbranding=1&amp;wmode=opaque&amp;enablejsapi=1&amp;origin=http%3A%2F%2Fcontent.popsicle.com");
 
     }
 
